@@ -1,42 +1,62 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Gaegu&family=Gamja+Flower&display=swap');
+.title {
+  font-family: 'Dongle', sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  margin: 3rem 0; 
+}
+
+.city-button {
+  background-color: rgb(174, 211, 253);
+  margin: 5px;
+}
+
+.weather-box { 
+  width: 80%;
+  height: 150px; 
+  margin: 3rem auto;
+  background-color: rgb(213, 227, 241);
+  border: 8px solid rgb(103, 145, 185);
+  border-radius: 10px;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.weather-info{
+display: flex;
+justify-content: space-between; 
+align-items: center;
+width: 80%; 
+}
+
+.city{
+  font-family: 'Dongle', sans-serif;
+  font-size: 3rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.weather{
+  font-family: 'Dongle', sans-serif;
+  font-size: 2rem;
+  text-align: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tempature{
+  font-family: 'Dongle', sans-serif; 
+  font-size: 2rem;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.city-box{
+  margin : 0 auto;
+  width :70%
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.city-button-selected{
+  background-color: rgb(156, 163, 172) !important;
+  color:black !important;
 }
